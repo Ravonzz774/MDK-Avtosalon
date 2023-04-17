@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="main container">
+        <section class="main__section choose-auto">
+            <div class="choose-auto__title">Быстрый подбор нового автомобиля</div>
+            <div class="choose-auto__auto">
+                <img src="assets/img/auto-slide-1.png" alt="Выбранные автомобиль">
+            </div>
+            <form class="choose-auto__form">
+                <div class="choose-auto__selects">
+                    <div class="choose-auto__column">
+                        <div class="choose-auto__select">
+                            <label for="mark">Марка</label>
+                            <select name="mark" id="mark">
+                                <option value="mark">Выбрать...</option>
+                            </select>
+                        </div>
+                        <div class="choose-auto__select">
+                            <label for="price-from">Цена от, руб.</label>
+                            <select name="price-from" id="price-from">
+                                <option value="price-from">Выбрать...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="choose-auto__column">
+                        <div class="choose-auto__select">
+                            <label for="model">Модель</label>
+                            <select name="model" id="model">
+                                <option value="model">Выбрать...</option>
+                            </select>
+                        </div>
+                        <div class="choose-auto__select">
+                            <label for="price-to">Цена до, руб.</label>
+                            <select name="price-to" id="price-to">
+                                <option value="price-to">Выбрать...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-auto__column">
+                    <div class="choose-auto__chooser variant-chooser">
+                        <label for="transmission">КПП</label>
+                        <input type="text" name="transmission" id="transmission" hidden>
+                        <div class="variant-chooser__variants">
+                            <div class="variant-chooser__variant">Любая</div>
+                            <div class="variant-chooser__variant">АКПП</div>
+                            <div class="variant-chooser__variant">МКПП</div>
+                        </div>
+                    </div>
+                    <button type="submit" class="choose-auto__button">Показать 320 предложений</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
