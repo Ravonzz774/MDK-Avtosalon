@@ -17,6 +17,7 @@
 body {
     background-color: #fff;
     font-size: 62.5%;
+    font-family: 'Gilroy Regular', sans-serif;
 }
 
 .container {
@@ -25,30 +26,60 @@ body {
     margin: 0 auto;
 }
 
+.variant-chooser__variants {
+    display: flex;
+    justify-content: space-between;
+}
+
+.variant-chooser__variant {
+    padding: 1rem 1.7rem;
+    background-color: var(--default-color);
+    box-shadow: 0 0.4rem 1rem rgba(158, 152, 152, 0.13);
+    border-radius: 0.8rem;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.variant-chooser label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--black-color);
+    margin-left: 1.5rem;
+}
+
 .choose-auto {
-    background-image: url("../img/choose-auto-background.jpg");
+    background-image: url("../img/choose-auto-background.png");
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
 }
 
 .choose-auto__title {
     font-weight: 700;
     font-size: 2.2rem;
     line-height: 3.2rem;
+    padding-top: 1.9rem;
     text-align: center;
     text-transform: uppercase;
     color: var(--black-color);
 }
 
 .choose-auto__auto {
+    margin-top: 8rem;
     margin-left: 7.5rem;
 }
 
 .choose-auto__form {
     background: var(--gray-color);
-    border-radius: 8px;
+    border-radius: 0.8rem;
     padding: 3.5rem 6.5rem;
-    margin: 0 7.5rem;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 0 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 1.1fr;
 }
 
 .choose-auto__selects {
@@ -82,6 +113,7 @@ body {
     border-radius: 0.2rem;
     padding: 0.7rem 1.5rem;
     opacity: 0.6;
+    width: 24rem;
 }
 
 .choose-auto__select select::placeholder {
@@ -93,6 +125,23 @@ body {
     flex-direction: column;
     gap: 2rem;
 }
+
+.choose-auto__button {
+    border: none;
+    background: var(--blue-color);
+    padding: 1.3rem 0;
+    border-radius: 0.7rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 144%;
+    color: var(--default-color);
+
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+
 
 
 
